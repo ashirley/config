@@ -68,11 +68,36 @@ alias pwd="pwd -P"
 
 shopt -s cdspell
 
-PATH=~/bin:$PATH
+#export CDPATH=.:~:~/cvs
 
+
+PATH=~/bin:$PATH:/usr/java/jdk1.5.0/bin/:/scratch/aks/eclipse/:/scratch/aks/idea-3542/bin:/scratch/aks/jprofiler5/bin:/scratch/aks/last.fm-1.4.2.58240/bin
+
+export CVSROOT=":pserver:aks@cvs.dsl.local:/home/dev/cvsroot"
 export EDITOR="vim"
 
+export NNTPSERVER=nntp.aioe.org
+
 export FIGNORE=CVS:.svn
+
+#Agent Controller, for eclipse profiler
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/profiler/lib
+export PATH=$PATH:~/profiler/bin
+export RASERVER_HOME=~/profiler
+
+export JAVA_HOME=/usr/java/latest
+export JDK_HOME=/usr/java/latest
+
+#groovy
+export GROOVY_HOME=/scratch/aks/groovy/groovy-1.0-jsr-05
+PATH=$PATH:/scratch/aks/groovy/groovy-1.0-jsr-05/bin
+
+#grails
+export GRAILS_HOME=/home/local/aks/grails/grails-0.2.2
+PATH=$PATH:$GRAILS_HOME/bin
+
+#maven
+PATH=$PATH:/scratch/aks/maven-1.0.2/bin
 
 export PATH
 
@@ -80,3 +105,9 @@ alias osd_cat="osd_cat -p middle -A center -s 3 -f -*-*-*-*-*-*-144-*-*-*-*-*-*-
 alias firefox-clean="rm ~/.mozilla/firefox/*/{lock,.parentlock}"
 alias eclipse-clean="rm ~/workspace/.metadata/.lock"
 export TERM=rxvt
+
+
+#useful constants
+export PUBLISHMTR=/home/shared/companies/IR/publish/MTR
+
+alias spotify="/opt/cxchromium/bin/wine \"c:/Program Files/Spotify/spotify.exe\""
