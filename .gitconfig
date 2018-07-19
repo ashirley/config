@@ -1,0 +1,23 @@
+[user]
+    name = Andrew Shirley
+    email = andrew@als-bi.com
+[alias]
+    graph = log --graph --abbrev-commit --decorate --all --date-order -C -M --date=local
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date=local
+    stat = status
+#    out = log origin...
+#    out = log --graph --abbrev-commit --decorate --date-order -C -M --date=local origin...
+    out = log --all --not --remotes=origin --graph --abbrev-commit --decorate -C -M --date=local
+    bv = branch -vv
+    bvs = branch -vv --sort -committerdate
+    bm = branch --merged develop
+    uncommit = reset --soft HEAD~1
+    bdiff = "!f(){ echo 'Commits in' $2 'which are not in' $1; echo; git log --no-merges ^remotes/origin/$1 remotes/origin/$2; };f"
+
+    ff = merge --ff-only
+    noff = merge --no-ff
+    
+[diff]
+       noprefix = true
+[fetch]
+    prune = true
