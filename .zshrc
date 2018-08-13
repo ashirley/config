@@ -104,3 +104,9 @@ unsetopt share_history
 export EDITOR=vim
 
 export PATH="$HOME/.yarn/bin:$PATH"
+
+#https://alm.deveng.io/wiki/display/PDP/Run+Jenkins+2+%28JAAS%29+Locally
+export URL_SEED_JOBS_REPO=ssh://git@gitlab.deveng.systems:2222/andrew.shirley/seed-job-test.git
+export JENKINS_HOME_ON_HOST=/tmp/jenkins
+export IMAGE_VERSION=42
+

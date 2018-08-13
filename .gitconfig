@@ -1,6 +1,6 @@
 [user]
     name = Andrew Shirley
-    email = andrew@als-bi.com
+    email = andrew.shirley@argos.co.uk
 [alias]
     graph = log --graph --abbrev-commit --decorate --all --date-order -C -M --date=local
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date=local
