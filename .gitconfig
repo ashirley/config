@@ -9,6 +9,7 @@
 #    out = log --graph --abbrev-commit --decorate --date-order -C -M --date=local origin...
     out = log --all --not --remotes=origin --graph --abbrev-commit --decorate -C -M --date=local
     bv = branch -vv
+    bvg = "!git bv | grep gone"
     bvs = branch -vv --sort -committerdate
     bm = branch --merged develop
     uncommit = reset --soft HEAD~1
