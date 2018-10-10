@@ -1,0 +1,22 @@
+syntax enable
+set modelines=1
+
+set tabstop=2
+set softtabstop=2
+set expandtab
+
+set showcmd
+set cursorline
+
+filetype indent on
+set wildmenu
+set showmatch
+
+set hlsearch
+
+
+set foldenable
+set foldmethod=indent
+
+
+nnoremap <leader>u :GundoToggle<CR>
