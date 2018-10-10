@@ -102,6 +102,7 @@ bindkey '\e.' insert-last-word
 unsetopt share_history
 
 export EDITOR=vim
+export LESS=FRX
 
 export PATH="$HOME/.yarn/bin:$PATH"
 
