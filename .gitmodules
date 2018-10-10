@@ -1,0 +1,3 @@
+[submodule ".vim/pack/gundo/start/gundo"]
+	path = .vim/pack/gundo/start/gundo
+	url = git@github.com:sjl/gundo.vim.git
