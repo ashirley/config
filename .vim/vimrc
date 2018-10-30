@@ -14,9 +14,10 @@ set showmatch
 
 set hlsearch
 
+set awa
 
 set foldenable
 set foldmethod=indent
-
+set foldlevel=99
 
 nnoremap <leader>u :GundoToggle<CR>
