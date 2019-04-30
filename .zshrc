@@ -58,7 +58,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx node npm docker mvn jira web-search screen)
+plugins=(git osx node npm docker mvn jira web-search screen yarn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,8 +103,6 @@ unsetopt share_history
 
 export EDITOR=vim
 export LESS=FRX
-
-export PATH="$HOME/.yarn/bin:$PATH"
 
 #https://alm.deveng.io/wiki/display/PDP/Run+Jenkins+2+%28JAAS%29+Locally
 export URL_SEED_JOBS_REPO=ssh://git@gitlab.deveng.systems:2222/andrew.shirley/seed-job-test.git
