@@ -1,3 +1,5 @@
+[core]
+    hooksPath = ~/.git/hooks/
 [user]
     name = Andrew Shirley
     email = andrew@als-bi.com
@@ -21,6 +23,8 @@
     fff = "!git fetch && git ff"
     
 [diff]
-       noprefix = true
+    noprefix = true
 [fetch]
     prune = true
+[log]
+    follow = true
