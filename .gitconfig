@@ -6,6 +6,7 @@
 [alias]
     graph = log --graph --abbrev-commit --decorate --all --date-order -C -M --date=local
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date=local
+    lga = lg --all
     stat = status
 #    out = log origin...
 #    out = log --graph --abbrev-commit --decorate --date-order -C -M --date=local origin...
