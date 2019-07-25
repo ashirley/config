@@ -3,3 +3,9 @@ Some of my config files.
 These are here for 2 reasons:
 1. I find browsing other peoples' config/dot files helpful
 2. I tried this in svn but it worked horribly, I hope git will be better and if so will think about moving other things onto it.
+
+== zshrc
+* Install Oh My Zsh! - sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+* Install powerlevel9k: https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#option-2-install-for-oh-my-zsh
+* Install DejaVuSansMono from Nerd fonts: https://github.com/ryanoasis/nerd-fonts/releases/latest
+* If using ConEmu, set the font (twice) in the settings.

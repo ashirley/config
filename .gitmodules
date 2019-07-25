@@ -1,3 +1,9 @@
 [submodule ".vim/pack/gundo/start/gundo"]
 	path = .vim/pack/gundo/start/gundo
 	url = git@github.com:sjl/gundo.vim.git
+[submodule ".vim/pack/dist/start/vim-airline"]
+	path = .vim/pack/dist/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule ".vim/pack/dist/start/vim-devicons"]
+	path = .vim/pack/dist/start/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
