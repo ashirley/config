@@ -1,0 +1,20 @@
+#!/bin/bash
+if [ "$2" = "merge" -o "$2" = "squash" -o "$2" = "commit" ]
+then
+  # Don't break merge or squash commits or when amending an existing commit.
+  exit 0
+fi
+
+if [ -z ${JIRA_PREFIX} ]
+then
+  # Don't try this if we havn't set the JIRA_PREFIX to use to find tickets.
+  exit 0
+fi
+
+BRANCH_NAME=$(git symbolic-ref --short HEAD)
+#feature/CCOP-1234/CCOP-5678/wibble
+TICKET=$(echo "$BRANCH_NAME" | sed 's#feature.*/\('${JIRA_PREFIX}'[0-9]*\)/.*#\1#')
+if [ "$TICKET" != "$BRANCH_NAME" ]
+then
+	sed -i -e "1s#^#\#$TICKET: #" $1
+fi
