@@ -1,5 +1,5 @@
 [core]
-    hooksPath = ~/.git/hooks/
+    hooksPath = ~/.githooks/
 [user]
     name = Andrew Shirley
     email = andrew.shirley@argos.co.uk

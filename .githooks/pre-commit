@@ -1,0 +1,3 @@
+if [ -e ./.git/hooks/pre-commit ]; then
+    ./.git/hooks/pre-commit "$@"
+fi
