@@ -9,3 +9,5 @@ These are here for 2 reasons:
 * Install powerlevel9k: https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#option-2-install-for-oh-my-zsh
 * Install DejaVuSansMono from Nerd fonts: https://github.com/ryanoasis/nerd-fonts/releases/latest
 * If using ConEmu, set the font (twice) in the settings.
+
+This uses git submodules so after cloning, run `git submodule init; git submodule update --recursive --remote`
