@@ -1,7 +1,7 @@
 #!/bin/bash
-if [ "$2" = "merge" -o "$2" = "squash" -o "$2" = "commit" ]
+if [ "$2" = "message" -o "$2" = "merge" -o "$2" = "squash" -o "${2}" = "commit" ]
 then
-  # Don't break merge or squash commits or when amending an existing commit.
+  # Don't break merge or squash commits, when amending an existing commit or when we have specified the message already.
   exit 0
 fi
 
