@@ -109,6 +109,10 @@ export URL_SEED_JOBS_REPO=ssh://git@gitlab.deveng.systems:2222/andrew.shirley/se
 export JENKINS_HOME_ON_HOST=/tmp/jenkins
 export IMAGE_VERSION=42
 
-export NVM_DIR="$HOME/.nvm"
+export NVM_DIR=$(python -c "import os; print(os.path.realpath('"$(brew --prefix nvm)"'))")
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+PATH=~/.bin:$PATH
+PATH=$PATH:/Applications/calibre.app/Contents/MacOS/
+PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
