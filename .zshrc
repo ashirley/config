@@ -103,3 +103,6 @@ unsetopt share_history
 
 export EDITOR=vim
 export LESS=FRX
+
+export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="$(brew --prefix)/opt/libpq/bin:$PATH"
