@@ -22,3 +22,4 @@ set foldmethod=indent
 set foldlevel=99
 
 nnoremap <leader>u :GundoToggle<CR>
+let g:gundo_prefer_python3=1
