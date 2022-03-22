@@ -6,8 +6,9 @@ These are here for 2 reasons:
 
 == zshrc
 * Install Oh My Zsh! - sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-* Install powerlevel9k: https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#option-2-install-for-oh-my-zsh
-* Install DejaVuSansMono from Nerd fonts: https://github.com/ryanoasis/nerd-fonts/releases/latest
+* Install powerlevel10k: https://github.com/romkatv/powerlevel10k/blob/master/README.md#oh-my-zsh
+* --Install DejaVuSansMono from Nerd fonts: https://github.com/ryanoasis/nerd-fonts/releases/latest--
+* Install p10k font (may be automatic in iterm2) - https://github.com/romkatv/powerlevel10k/blob/master/README.md#meslo-nerd-font-patched-for-powerlevel10k
 * If using ConEmu, set the font (twice) in the settings.
 
 This uses git submodules so after cloning, run `git submodule init; git submodule update --recursive --remote`
