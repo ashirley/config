@@ -82,9 +82,9 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-export JIRA_URL=""
+export JIRA_URL="https://taskizeltd.atlassian.net"
 export JIRA_NAME="andrew.shirley"
-export JIRA_PREFIX="CCOP-"
+export JIRA_PREFIX="CON-"
 export JIRA_RAPID_BOARD=true
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
