@@ -13,7 +13,7 @@ fi
 
 BRANCH_NAME=$(git symbolic-ref --short HEAD)
 #feature/CCOP-1234/CCOP-5678/wibble
-TICKET=$(echo "$BRANCH_NAME" | sed 's#feature.*/\('${JIRA_PREFIX}'[0-9]*\)/.*#\1#')
+TICKET=$(echo "$BRANCH_NAME" | sed -E 's#((feature|task).*/)?('${JIRA_PREFIX}'[0-9]*)[/-].*#\3#')
 if [ "$TICKET" != "$BRANCH_NAME" ]
 then
 	sed -i -e "1s#^#\#$TICKET: #" $1

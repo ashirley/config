@@ -68,7 +68,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git macos node npm docker mvn jira web-search screen yarn)
+plugins=(git macos node npm docker mvn jira web-search screen yarn vagrant iterm2)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -116,6 +116,7 @@ export LESS=FRX
 
 export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="$(brew --prefix)/opt/libpq/bin:$PATH"
+export PATH="$PATH:$(readlink -f ~)/.bin"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
